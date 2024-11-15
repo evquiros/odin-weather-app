@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(assets/night.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.header p {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#location {
+    background-color: rgb(211, 211, 211, 0.2);
+    padding: .7rem 1rem;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.btnLocation {
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+.btnLocation:hover {
+    background-color: rgb(230, 226, 226);
+}
+
+input::placeholder{
+    color: white;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1;
+    margin-top: 100px;
+    width: 40%;
+}
+
+.data p {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.data span {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.info {
+    display: flex;
+}
+
+.info p {
+    font-size: 5rem;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.degrees::after {
+    content: '°C';
+    font-size: 1.5rem;
+}
+
+.error {
+    color: red;
+    display: none;
+}
